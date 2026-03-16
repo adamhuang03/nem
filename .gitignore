@@ -1,0 +1,11 @@
+# Ignore run logs and session state — keep folder structure
+runs/*
+!runs/.gitkeep
+sessions/*
+!sessions/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
