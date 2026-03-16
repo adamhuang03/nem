@@ -5,7 +5,7 @@ NEM_DIR="$(cd "$(dirname "$0")" && pwd)"
 CLAUDE_JSON="$HOME/.claude.json"
 
 echo "Installing dependencies..."
-pip install -r "$NEM_DIR/requirements.txt" -q
+python3 -m pip install -r "$NEM_DIR/requirements.txt" -q
 
 echo "Registering nem MCP server in $CLAUDE_JSON..."
 python3 - <<EOF
